@@ -20,7 +20,7 @@ export class App extends Component {
         
         var account = (await this.web3.eth.getAccounts())[0];
 
-        set.setState({
+        this.setState({
             account: account.toLowerCase()
         }, () => {
             this.load();
