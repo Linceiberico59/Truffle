@@ -4,6 +4,10 @@ export class AirlineService {
         this.contract = contract;
     }
 
+    async buyFligth(FlightIndex, from, value) {
+        return this.contract.buyFligth(FlightIndex, {from, value});
+    }
+   
     async getFlights() {
         let total = await this.getTotalFlights();
         let flights = [];
