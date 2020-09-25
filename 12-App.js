@@ -38,7 +38,7 @@ export class App extends Component {
             const {customer, price,flight} = result.args;
 
             if(customer === this.state.account) {
-                console.log('You purchased a flight to ${fight} with a cost of ${price}');
+                console.log(`You purchased a flight to ${fight} with a cost of ${price}`);
             }
 
         }.bind (this));
@@ -133,7 +133,7 @@ export class App extends Component {
             </div>
             <div className="row">
                 <div className="col-sm">
-          AaaAsasASas          <Panel title="Available flights">
+                   <Panel title="Available flights">
                         {this.state.flights.map((flight, i) => {
                             return <div key={i}>
                                         <span>{flight.name} - cost: {this.toEther(flight.price)}</span>
