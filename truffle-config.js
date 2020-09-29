@@ -1,4 +1,4 @@
- const HDWalletProvider = require ('wool venture birth skull circle sibling ankle grief poem spatial must suggest');
+ const HDWalletProvider = require ('truffle-hdwallet-provider');
   
  const mnemonic = 'wool venture birth skull circle sibling ankle grief poem spatial must suggest'
  
